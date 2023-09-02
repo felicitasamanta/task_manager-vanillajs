@@ -1,0 +1,159 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  position: relative;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.login {
+  input {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+}
+
+.logout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageContainer {
+  margin: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .top {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    border-bottom: 3px solid #ddd;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      width: 256px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  width: 70px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &.new {
+    &:hover {
+      background-color: green;
+    }
+  }
+
+  &.add {
+    &:hover {
+      background-color: rgb(138, 138, 11);
+    }
+  }
+
+  &.clear,
+  &.clearAll {
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  &.subtract {
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+
+.date {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+  border-bottom: 3px solid #ddd;
+  align-items: center;
+
+  p {
+    width: 256px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+
+.allTasks {
+  margin-top: 30px;
+}
+.dateBlock {
+  margin-top: 60px;
+}
+
+.task {
+  padding: 5px 0px 5px 5px;
+  width: 450px;
+  border-bottom: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .properties {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .priority {
+      padding: 5px 10px;
+    }
+
+    .icons {
+      display: flex;
+      gap: 10px;
+      cursor: pointer;
+
+      button {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.done {
+  background-color: green;
+}
+.undone {
+  background-color: white;
+}
